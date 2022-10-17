@@ -40,6 +40,9 @@ exec --no-startup-id nm-applet
 #No seguir el foco del ratón
 focus_follows_mouse no
 
+#VirtualBox con Windows
+bindsym $mod+w exec --no-startup-id /home/wllop/windows10.sh; workspace 0;fullscreen enable
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -179,6 +182,9 @@ assign [class="Google-Chrome"] $ws7
 assign [class="Win10 - VMWare Workstation"] $ws10
 assign [class="mobaxterm_20.0_preview1.exe"] $ws9
 assign [class="Win10"] $ws10
+
+for_window [class="VirtualBoxVM"] move to workspace 0,fullscreen enable
+
 #Lanzar aplicaciones personalizadas:
 bindsym $mod+g exec google-chrome	
 
