@@ -1,0 +1,7 @@
+xprop --> Para detectar nombre "ventanas" para configurar i3
+xev --> Saber qué tecla estamos pulsando
+xmodmap -pke --> Saber qué códigos hay asociados a teclas XF86
+xrandr --> Monitores
+blueman-manager --> Bluetooth
+brightnessctl  --> Brillo
+dd bs=4M if=/imagen/img.iso of=/dev/usb conv=fdatasync --> Copiar imagen .iso a usb
